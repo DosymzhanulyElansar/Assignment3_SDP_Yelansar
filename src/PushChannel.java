@@ -1,4 +1,6 @@
-package PACKAGE_NAME;
-
-public class PushChannel {
+public class PushChannel implements Channel {
+    @Override
+    public String send(String message) {
+        return "[Push Notification] " + message;
+    }
 }
